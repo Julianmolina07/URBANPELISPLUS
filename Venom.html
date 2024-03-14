@@ -3,13 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+    <title>VENOM</title>
+    <style>
+        /* Estilos CSS adicionales para el video */
+        video {
+            width: 100%;
+            max-width: 1200px; /* Ajusta el ancho máximo según tu preferencia */
+            display: block;
+            margin: 0 auto; /* Esto centrará el video horizontalmente */
+        }
+    </style>
 </head>
 <body>
-    <video width="640" height="360" controls>
-        <source src="ruta_del_video.mp4" type="video/mp4">
+
+    <header class="header">
+        
+        <div class="menu container">
+            <a href="#" class="logo">URBANPELISPLUS</a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="image/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Peliculas</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="btn-1">Login</a>
+        </div>
+
+        <div class="header-content container">
+
+            <div class="header-1">
+                <!-- Contenido opcional en el nuevo header -->
+                <h2>Bienvenido a la nueva página</h2>
+            </div>
+            <div class="header-2">
+                <!-- Contenido opcional en el nuevo header -->
+            </div>
+
+        </div>
+    </header>
+
+    <video width="960" height="540" controls>
+        <source src="ruta_del_video.mp4" type="video/mp4" poster="image/bg.jpg">
         <!-- Texto alternativo -->
         <p>Venom el venenoso JAJAJAJAJAJA</p>
-      </video>
+    </video>
+
+    
+
+    <footer class="footer container">
+        <h3>URBANPELISPLUS</h3>
+
+        <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Nosotros</a></li>
+            <li><a href="">Peliculas</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
